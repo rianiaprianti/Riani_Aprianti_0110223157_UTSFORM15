@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            float: right;
+        }
+
+        select{
+            float: right;
+        }
+
+        textarea{
+            float: right;
+        }
+
+        .form-group{
+            margin-bottom: 20px;
+        }
+
+        .form-container{
+            border-radius: 10px;
+            padding: 30px;
+            width: 400px;
+            margin: 100px auto;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Form Registrasi Tempat Rekreasi Wisata</legend>
+        <div class="form-container">
+            <form method="post">
+                <div class="form-group">
+                    <label for="nik">Nama Tempat Wisata</label>
+                    <input type="number" id="nik">
+                </div>
+                <div class="form-group">
+                    <label for="jenis_wisata">Jenis Wisata</label>
+                    <select name="jenis_wisata" id="jenis_wisata">
+                        <option value="taman">Taman</option>
+                        <option value="pantai">Pantai</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="dw">Deskripsi Wisata</label>
+                    <textarea name="deskripsi" id="dw"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="kontak_person">Kontak Person:</label>
+                    <input type="text" id="kontak_person">
+                </div>
+                <div class="form-group">
+                    <label for="telpon">No HP/Telpon:</label>
+                    <input type="number" id="telpon">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email">
+                </div>     
+                <div class="form-group">
+                    <label for="alamat_web">Alamat Web:</label>
+                    <input type="text" id="alamat_web" placeholder="http://">
+                </div>
+                <div class="form-group">
+                    <label for="alamat">Alamat Lengkap:</label>
+                    <textarea name="alamat" id="alamat"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="ll">Latitude, Langitude:</label>
+                    <input type="text" id="ll">
+                </div>
+                <div class="form-group">
+                    <button type="button" style="background-color: white;">Daftar</button>
+                    <button type="button" style="background-color: white;">Batal</button>
+                </div>
+    </fieldset>
+</body>
+</html>
